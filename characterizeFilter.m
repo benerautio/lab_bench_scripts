@@ -13,8 +13,8 @@ vna = visadev(resourcelist{1,1});
 zva40 = ZVA40_ctl(vna);
 
 %figure out which cutoff frequencies are valid
-lc = ad2.LPF_states(ad2.LPF_states > f);
-hc = ad2.HPF_states(ad2.HPF_states < f);
+lc = ad2.LPF_states(ad2.LPF_states > 100);
+hc = ad2.HPF_states(ad2.HPF_states < 100);
 
 %for each combo, find phase and mag
 filter_data = zeros(numel(hc)*numel(lc), 4);

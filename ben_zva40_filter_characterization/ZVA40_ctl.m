@@ -1,7 +1,7 @@
 classdef ZVA40_ctl
     %ZVA40_CTL Summary of this class goes here
     %   Detailed explanation goes here
-    
+    %NEXT: only read from measurement once the sweep finishes? Use WAI?
     properties
         visa
     end
